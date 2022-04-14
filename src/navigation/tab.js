@@ -6,7 +6,7 @@ import { StyleSheet,
     } from 'react-native';
 import { createBottomTabNavigator,BottomTabBar } from '@react-navigation/bottom-tabs';
 import Home from "../screen/Home";
-
+import Login from "../screen/Login";
 const Tab = createBottomTabNavigator();
 
 const Tabs = () => {
@@ -96,7 +96,7 @@ const Tabs = () => {
                 }}
             />
             <Tab.Screen
-                component={Home}
+                component={Login}
                 showLabel={false}
                 name='Wallet'
                 options={{

@@ -3,11 +3,13 @@ import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator,  } from '@react-navigation/native-stack';
 import Tabs from './src/navigation/tab';
-import CameraOpen from './src/screen/Camera';
+import Login from './src/screen/Login';
 
 
 const Stack = createNativeStackNavigator();
 export default function App() {
+
+ 
   return (
     <NavigationContainer>
       <Stack.Navigator
@@ -22,8 +24,8 @@ export default function App() {
             component={Tabs}
           />
           <Stack.Screen
-            name='Camera'
-            component={CameraOpen}
+            name='Login'
+            component={Login}
           />
       </Stack.Navigator>
     </NavigationContainer>

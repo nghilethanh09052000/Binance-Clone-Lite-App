@@ -8,7 +8,12 @@ import Welcome from '../components/Home/Welcome';
 import Chart from '../components/Home/Chart';
 import Slide from '../components/Home/Slide';
 import { COLORS, icons } from '../constants';
+
+import { useState, useEffect } from 'react';
+
 const Home = () => {
+   
+
     return (
         <SafeAreaView style={styles.container}>
             <Header/>

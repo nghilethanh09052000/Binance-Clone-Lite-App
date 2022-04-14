@@ -69,7 +69,7 @@ const Header = ({navigation}) => {
                         style={{width:20,
                                     height:20
                             }}
-                        onPress={()=> navigation.navigate('CameraOpen')}
+                        onPress={()=> navigation.push('CameraOpen')}
                     />
                 </View>
             </View>
