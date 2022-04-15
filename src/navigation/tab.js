@@ -5,15 +5,18 @@ import { StyleSheet,
         Image
     } from 'react-native';
 import { createBottomTabNavigator,BottomTabBar } from '@react-navigation/bottom-tabs';
+
+//Screen
 import Home from "../screen/Home";
 import Login from "../screen/Login";
-const Tab = createBottomTabNavigator();
 
+//Components
+import Header from "../components/Home/Header";
+const Tab = createBottomTabNavigator();
 const Tabs = () => {
     return (
         <Tab.Navigator
             screenOptions={{
-                headerShown: false,
                 tabBarStyle: {
                     position: 'absolute',
                     height:60,
@@ -23,37 +26,36 @@ const Tabs = () => {
                     backgroundColor: COLORS.primary,
                     elevation: 0,
                   
-                }
+                },
+            headerShown:false
             }}
-    
+           
         >
             <Tab.Screen
                 component={Home}
-                tabBar
-                name='Chart'
+                name= 'Chart'
                 options={{
                     tabBarIcon: ({ focused }) => (
-                       
-                            <Image
-                                source={icons.barChart}
-                                resizeMode="contain"
-                                style={{
-                                    width: 25,
-                                    height: 25,
-                                    tintColor: focused ? COLORS.white : COLORS.noFocus
-
+                        <Image
+                            source={icons.barChart}
+                            resizeMode="contain"
+                            style={{
+                                width: 25,
+                                height: 25,
+                                tintColor: focused ? COLORS.white : COLORS.noFocus
                                 }}
-                            />          
-               
-                        
+                        />          
                     ),
                     tabBarShowLabel:false,
+                    headerShown: true,
+                    headerTitle: ()=><Header/>
                 }}
             />
             <Tab.Screen
                 component={Home}
                 showLabel={false}
                 name='Transfer'
+                
                 options={{
                     tabBarIcon: ({ focused }) => (
                         <View

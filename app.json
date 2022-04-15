@@ -1,12 +1,12 @@
 {
   "expo": {
-    "name": "my-app",
-    "slug": "my-app",
+    "name": "Binance-Lite-Clone",
+    "slug": "binance-lite-clone",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/binance.jpg",
+    "icon": "./assets/icon.png",
     "splash": {
-      "image": "./assets/images/binance.jpg",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -21,12 +21,14 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/binance.jpg",
+        "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       }
     },
     "web": {
-      "favicon": "./assets/images/binance.jpg"
-    }
+      "favicon": "./assets/favicon.png"
+    },
+    "description": "A clone Binance App",
+    "githubUrl": "https://github.com/thanhnghi95/Binance-Clone-Lite-App"
   }
 }
